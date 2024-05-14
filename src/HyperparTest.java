@@ -16,20 +16,20 @@ public class HyperparTest {
     }
 
     @Test
-    public void introduceCadenaNoEsHyperPar(){
-        long num = Long.parseLong("adasfd");
+    public void negativoEsHyperPar(){
+        long num = -240;
+        assertTrue(Hyperpar.esHyperPar(num));
+    }
+
+    @Test
+    public void negativoNoEsHyperPar(){
+        long num = -382;
         assertFalse(Hyperpar.esHyperPar(num));
     }
 
     @Test
-    public void parametroNuloNoEsHyperPar(){
-        long num = Long.parseLong(null);
-        assertFalse(Hyperpar.esHyperPar(num));
-    }
-
-    @Test
-    public void cadenaVacia(){
-        long num = Long.parseLong("");
-        assertFalse(Hyperpar.esHyperPar(num));
+    public void ceroEsHyperPar(){
+        long num = 0;
+        assertTrue(Hyperpar.esHyperPar(num));
     }
 }

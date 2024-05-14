@@ -1,5 +1,6 @@
 /**
  * Esta clase servira para comprobar y obtener si un numero es HyperPar o no
+ * @author Kevin
  */
 public class Hyperpar {
     private long num;
@@ -19,12 +20,12 @@ public class Hyperpar {
      * @return devuelve boolean true si es hyperpar, false si no lo es
      */
     public static boolean esHyperPar(long numero){
-        String numSeparado = String.valueOf(numero);
+        String numSeparado = String.valueOf(Math.abs(numero));
         long resultado;
         boolean hyperPar = false;
 
         for (int i = 0; i < numSeparado.length(); i++) {
-            numero = numSeparado.charAt(i);
+            numero = Long.parseLong(String.valueOf(numSeparado.charAt(i)));
             resultado = numero % 2;
             if (numero == 0) hyperPar = true;
             else hyperPar = false;

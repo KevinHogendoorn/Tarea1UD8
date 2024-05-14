@@ -1,12 +1,16 @@
+package es.iesmz.ed.algoritmes;
+
 /**
- * Esta clase servira para comprobar y obtener si un numero es HyperPar o no
+ * Esta clase servira para comprobar y obtener si un numero es HyperPar o no.
+ * Un numero es HyperPar si todas sus cifras son pares
+ *
  * @author Kevin
  */
 public class Hyperpar {
     private long num;
 
     /**
-     * Constructor de la Clase Hyperpar
+     * Constructor de la Clase es.iesmz.ed.algoritmes.Hyperpar
      *
      * @param num numero para comprobar
      */

@@ -1,3 +1,6 @@
+package es.iesmz.ed.algoritmes;
+
+import es.iesmz.ed.algoritmes.Hyperpar;
 import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
